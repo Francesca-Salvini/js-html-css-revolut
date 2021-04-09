@@ -1,0 +1,72 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.menu a {
+    color: #A0A6AD;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 10%;
+}
+
+.left-menu {
+    width: 30%;
+}
+
+.right-menu {
+    width: 60%;
+    text-align: right;
+}
+
+/*SUB MENU*/
+
+.dropdown {
+    /*TEST*/
+    background-color: lightcoral;
+    /*TO DO: nascondere dropdown*/
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160%;;
+}
+
+.dropdown .menu li {
+    display: block;
+    text-align: left;
+}
+
+.active {
+    display: block;
+}
