@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
 img {
     width: 100%;
     display: block;
@@ -41,6 +46,7 @@ nav {
 
 .left-menu {
     width: 30%;
+    align-self: center;
 }
 
 .right-menu {
@@ -51,22 +57,52 @@ nav {
 /*SUB MENU*/
 
 .dropdown {
-    /*TEST*/
-    background-color: lightcoral;
+    padding: 10px 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
     /*TO DO: nascondere dropdown*/
     display: none;
 
     position: absolute;
-    top: 100%;
+    top: 160%;
     left: 0;
-    min-width: 160%;;
+    width: max-content;
+    border: none;
 }
 
 .dropdown .menu li {
     display: block;
     text-align: left;
+    padding: 10px 20px 10px 0;
+}
+
+.dropdown .menu li a {
+    font-size: 12px;
 }
 
 .active {
     display: block;
 }
+
+button {
+    background-color: #eb018d;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+a:hover {
+    color:black;
+}
+
+li i {
+    font-size: 10px;
+    font-weight: 100;
+    color: #A0A6AD;
+}
+
