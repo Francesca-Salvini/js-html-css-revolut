@@ -16,4 +16,18 @@ $('.menu li').mouseleave(function(){
     $(this).children('.dropdown').removeClass('active');
 });
 
+
+// quando il mouse passa sopra IT, la freccia si sposta verso l'alto
+$('li.lang').mouseenter(function() {
+    var chevron = $(this).children('i').removeClass('fa-chevron-down');
+    chevron.addClass('fa-chevron-up');
+});
+// quando il mouse esce da IT, la freccia torna verso il basso
+$('li.lang').mouseleave(function() {
+    var chevron = $(this).children('i').removeClass('fa-chevron-up');
+    chevron.addClass('fa-chevron-down');
+ });
+
+
+
 });
