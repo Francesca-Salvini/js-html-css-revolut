@@ -106,3 +106,9 @@ li i {
     color: #A0A6AD;
 }
 
+a.beta {
+    color: fuchsia;
+    
+    font-weight: 600;
+    vertical-align: super;
+}
